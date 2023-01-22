@@ -60,8 +60,8 @@ func traductorLeet(texto: String) -> String {
     // Recorremos cada letra (char) del texto que nos pasan como parametro,
     // la vamos traduciendo (buscandola en el diccionario)
     for letra in texto {
-        // Buscarmos la letra (en mayusculas) en el diccionario
-        let valor = diccionario[letra.description.uppercased()]
+        // Buscamos la letra (en mayusculas) en el diccionario
+        let valor = diccionario[String(letra).uppercased()]
         if valor != nil {
             traduccion = traduccion + valor!
         } else {
